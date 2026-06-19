@@ -1,0 +1,101 @@
+/* Reading Lesson Wrapper */
+.reading-lesson-wrapper {
+    padding: 2rem;
+    background: #ffffff;
+}
+
+/* Reading Lesson Article */
+.reading-lesson-article {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Reading Lesson Header */
+.reading-lesson-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid #e0e4e8;
+}
+
+.reading-lesson-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin: 0;
+    line-height: 1.3;
+}
+
+/* Reading Lesson Body */
+.reading-lesson-body {
+    position: relative;
+}
+
+.reading-lesson-text {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    color: #2d3748;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+
+/* Improve text readability */
+.reading-lesson-text {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Add subtle animations */
+.reading-lesson-article {
+    animation: fadeInUp 0.4s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .reading-lesson-wrapper {
+        padding: 1.5rem 1rem;
+    }
+    
+    .reading-lesson-heading {
+        font-size: 1.5rem;
+    }
+    
+    .reading-lesson-text {
+        font-size: 1rem;
+        line-height: 1.65;
+    }
+}
+
+@media (max-width: 480px) {
+    .reading-lesson-wrapper {
+        padding: 1rem;
+    }
+    
+    .reading-lesson-header {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    
+    .reading-lesson-heading {
+        font-size: 1.25rem;
+    }
+    
+    .reading-lesson-text {
+        font-size: 0.95rem;
+    }
+}

@@ -1,0 +1,160 @@
+.generator-container {
+    background-color: #f5f7fa;
+    height: 100vh;
+   
+}
+
+.path-generator-container {
+    max-width: 600px;
+    margin:2rem auto;
+    padding: 2.5rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+
+}
+
+.path-generator-header {
+
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.path-generator-title {
+    
+    font-size: 2rem;
+    margin: 1rem 0 0.5rem 0;
+    color: #1a1a1a;
+}
+
+
+
+
+.path-generator-form-topic,
+.path-generator-form-level {
+    margin-bottom: 1.5rem;
+}
+
+.path-generator-form-topic-title {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+
+
+.path-generator-form-topic-textfield {
+
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+
+
+.path-generator-form-level-title {
+
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.path-generator-form-level-select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+    outline: none;
+
+}
+
+.path-generator-form-duration {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.path-generator-form-duration-title {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.path-generator-form-duration-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    outline: none;
+
+}
+
+.path-generator-form-total-duration {
+    background: #f0f7ff;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #d0e7ff;
+}
+
+.path-generator-form-total-duration-text {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #1565c0;
+}
+
+.path-generator-form-submit-button {
+    width: 100%;
+    padding: 1rem;
+  background: linear-gradient(135deg, #4299e1, #3182ce);
+
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3)
+}
+
+.is-loading {
+    box-shadow: none;
+    cursor: not-allowed;
+    background: #ccc;
+}
+
+.path-generator-footer {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #999;
+}
+
+.path-generator-form-topic-textfield:focus,
+.path-generator-form-level-select:focus,
+.path-generator-form-duration-input:focus {
+    border-color: #4caf50;
+}

@@ -1,0 +1,239 @@
+/* Week Card Container */
+.week-card {
+    background: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    border: 1px solid #e0e4e8;
+    transition: all 0.2s ease;
+    overflow: hidden;
+}
+
+.week-card:hover {
+    border-color: #cbd5e0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.week-card-active {
+    border-color: #4299e1;
+    box-shadow: 0 2px 12px rgba(66, 153, 225, 0.15);
+}
+
+/* Week Card Header */
+.week-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+
+.week-card-header:hover {
+    background: #f7fafc;
+}
+
+.week-card-active .week-card-header {
+    background: #edf2f7;
+}
+
+.week-card-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex: 1;
+}
+
+.week-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    background: #edf2f7;
+    color: #4a5568;
+    flex-shrink: 0;
+    transition: all 0.2s;
+}
+
+.week-card-active .week-card-icon {
+    background: #4299e1;
+    color: white;
+}
+
+.week-card-title-wrapper {
+    flex: 1;
+    min-width: 0;
+}
+
+.week-card-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #1a202c;
+    margin: 0 0 0.25rem 0;
+    line-height: 1.3;
+}
+
+.week-card-subtitle {
+    font-size: 0.8rem;
+    color: #718096;
+    margin: 0;
+}
+
+/* Progress Badge */
+.week-card-progress-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 48px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+.progress-badge-count {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #4a5568;
+    padding: 0.25rem 0.75rem;
+    background: #edf2f7;
+    border-radius: 14px;
+}
+
+.week-card-active .progress-badge-count {
+    background: #bee3f8;
+    color: #2c5282;
+}
+
+.progress-badge-complete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background: #48bb78;
+    border-radius: 50%;
+    color: white;
+}
+
+/* Week Card Content */
+.week-card-content {
+    border-top: 1px solid #e0e4e8;
+    animation: expandDown 0.3s ease-out;
+}
+
+@keyframes expandDown {
+    from {
+        opacity: 0;
+        max-height: 0;
+    }
+    to {
+        opacity: 1;
+        max-height: 2000px;
+    }
+}
+
+/* Week Progress Bar */
+.week-progress-bar {
+    height: 4px;
+    background: #edf2f7;
+    position: relative;
+    overflow: hidden;
+}
+
+.week-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #4299e1, #3182ce);
+    transition: width 0.4s ease;
+}
+
+/* Week Lessons List */
+.week-lessons-list {
+    padding: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .week-card-header {
+        padding: 0.875rem 1rem;
+    }
+    
+    .week-card-title {
+        font-size: 0.9rem;
+    }
+    
+    .week-card-subtitle {
+        font-size: 0.75rem;
+    }
+}
+
+/* Sidebar Lesson Items (compact index view) */
+.sidebar-lesson-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    margin-bottom: 0.25rem;
+}
+
+.sidebar-lesson-item:hover {
+    background: #f7fafc;
+}
+
+.sidebar-lesson-active {
+    background: #edf2f7;
+    border-left: 3px solid #4299e1;
+    padding-left: calc(1rem - 3px);
+}
+
+.sidebar-lesson-completed {
+    opacity: 0.7;
+}
+
+.sidebar-lesson-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    color: #48bb78;
+}
+
+.sidebar-lesson-check-empty {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #cbd5e0;
+    border-radius: 50%;
+}
+
+.sidebar-lesson-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #718096;
+    flex-shrink: 0;
+}
+
+.sidebar-lesson-title {
+    font-size: 0.875rem;
+    color: #2d3748;
+    font-weight: 500;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.sidebar-lesson-active .sidebar-lesson-title {
+    color: #1a202c;
+    font-weight: 600;
+}
+
+.sidebar-lesson-completed .sidebar-lesson-title {
+    text-decoration: line-through;
+    color: #718096;
+}
