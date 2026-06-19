@@ -1,4 +1,4 @@
-import { fetchGPTResponse } from '../services/ClienteModeloIA';
+import { fetchGPTResponse } from '../services/clienteModeloIA';
 import { useState } from 'react';
 
 import { normalizePath } from '../services/Normalizer'
